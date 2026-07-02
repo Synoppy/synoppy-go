@@ -66,7 +66,9 @@ so every field of the JSON response is reachable by key.
 | `Screenshot` | `POST /api/screenshot` | `Screenshot(ctx, url string, opts map[string]any)` |
 | `Crawl` | `POST /api/crawl` | `Crawl(ctx, url string, limit int)` |
 | `Map` | `POST /api/map` | `Map(ctx, url string)` |
+| `Search` | `POST /api/search` | `Search(ctx, SearchOptions{Query: "…", MaxResults: 5, Markdown: true})` |
 | `Extract` | `POST /api/extract` | `Extract(ctx, url, prompt string)` |
+| `ExtractWithSchema` | `POST /api/extract` | `ExtractWithSchema(ctx, url, prompt string, schema json.RawMessage)` — constrain output to a JSON Schema (typed output) |
 | `Classify` | `POST /api/classify` | `Classify(ctx, url string, labels []string)` |
 | `Enrich` / `Brand` | `POST /api/brand` | `Enrich(ctx, url string)` / `Brand(ctx, in BrandInput)` |
 | `Images` | `POST /api/images` | `Images(ctx, url string)` |

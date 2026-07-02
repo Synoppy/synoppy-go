@@ -18,7 +18,7 @@ import (
 )
 
 // Version is the SDK version, sent as part of the User-Agent header.
-const Version = "1.0.0"
+const Version = "1.1.1"
 
 const defaultBaseURL = "https://synoppy.com"
 
